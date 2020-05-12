@@ -481,6 +481,11 @@ public class Home extends AppCompatActivity implements RecyclerViewAdapter.Delet
                         uniqueString = "";
                         progressDialog.dismiss();
                         hideBottomSheet();
+                        create_post_title_editText.setText("");
+                        create_post_details_editText.setText("");
+                        create_post_caption_editText.setText("");
+                        create_post_iv.setImageResource(R.drawable.ph);
+
                     } else {
                         progressDialog.dismiss();
                         Toast.makeText(Home.this, "Database update error", Toast.LENGTH_SHORT).show();
